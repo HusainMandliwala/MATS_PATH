@@ -10,6 +10,7 @@ $(document).ready(function(){
 		$("#loginform").slideUp();
 		$("#recoverform").fadeIn();
 	});
+
 	$('#to-login').click(function(){
 		
 		$("#recoverform").hide();
@@ -21,7 +22,8 @@ $(document).ready(function(){
 	
 	});
     
-    if($.browser.msie == true && $.browser.version.slice(0,3) < 10) {
+    if($.browser.msie == true && $.browser.version.slice(0,3) < 10)
+    {
         $('input[placeholder]').each(function(){ 
        
         var input = $(this);       
